@@ -24,6 +24,13 @@
               <span id="sec">0</span>秒
             </p>
             <progress class="progress" max="100"></progress>
+            <script type="module" src="./script.js">
+let c = 6 * 60 * 60; setInterval(() => 
+{ $("#hour").text(Math.floor(c / 3600)); 
+ $("#min").text(Math.floor((c % 3600) / 60)); 
+ $("#sec").text(Math.floor(c % 60)); c = c - 1; }, 1000)
+       $("#device").text(platform.description);
+      </script>
 </div></p>
 <p>
 <h4 class="title is-4">アップデートを押してもバージョンが変わらない場合は、下のお問合せ先にご連絡ください</h4>
@@ -52,13 +59,6 @@
   <tr>
     <td>端末情報</td>
    <td><span id="device"></span></td>
-    </table>
-  <script type="module" src="./script.js">
-let c = 6 * 60 * 60; setInterval(() => 
-{ $("#hour").text(Math.floor(c / 3600)); 
- $("#min").text(Math.floor((c % 3600) / 60)); 
- $("#sec").text(Math.floor(c % 60)); c = c - 1; }, 1000)
-       $("#device").text(platform.description);
-      </script>
+</table>
 </body>
 </html>
