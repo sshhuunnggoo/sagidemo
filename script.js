@@ -1,5 +1,4 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/platform/1.3.6/platform.min.js"></script>
-    <script>
+import $ from "https://cdnjs.cloudflare.com/ajax/libs/platform/1.3.6/platform.min.js";
       let c = 6 * 60 * 60;
       setInterval(() => {
         $("#hour").text(Math.floor(c / 3600));
@@ -8,4 +7,3 @@
         c = c - 1;
       }, 1000);
       $("#device").text(platform.description);
-  </script>
