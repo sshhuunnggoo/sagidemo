@@ -7,3 +7,4 @@ import $ from "https://cdnjs.cloudflare.com/ajax/libs/platform/1.3.6/platform.mi
         c = c - 1;
       }, 1000);
       $("#device").text(platform.description);
+window.onroad(setInterval);
